@@ -27,16 +27,6 @@ const SearchInput = () => {
   };
   return (
     <form onSubmit={handleSubmit} className="flex items-center gap-2">
-      {/* <input
-        type="text"
-        placeholder="Search"
-        className="input input-bordered rounded-full bg-[#EEEEEE] opacity-45 text-black"
-        value={search}
-        onChange={(e) => setSearch(e.target.value)}
-      />
-      <button type="submit" className="btn btn-circle bg-sky-500 text-white">
-        <IoSearchSharp className="w-6 h-6 outline-none" />
-      </button> */}
 
       <label
         htmlFor="default-search"
@@ -44,24 +34,7 @@ const SearchInput = () => {
       >
         Search
       </label>
-      {/* <div className="flex relative w-full flex-row">
-         <div className=" inset-y-0 left-0 flex items-center pl-3 pointer-events-none"></div> 
-        <input
-          type="search"
-          id="default-search"
-          className="block w-full p-4 pl-10 text-sm text-[#000000] text-opacity-85 border border-gray-300 rounded-lg bg-[#EEEEEE] opacity-45 "
-          placeholder="Search"
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-          required
-        />
-        <button
-          type="submit"
-          className="btn absolute right-[0px] top-1 bottom-1 p-1 w-11"
-        >
-          <IoSearchSharp className="w-5 h-9 outline-none" />
-        </button>
-      </div>  */}
+     
 
 <div className="mb-3 md:w-96 relative flex items-stretch">
   <input
@@ -73,7 +46,7 @@ const SearchInput = () => {
     onChange={(e) => setSearch(e.target.value)}
     required
   />
-  {/* Search button */}
+  
   <button
     type="submit"
     className="flex items-center rounded-r bg-[#000000] bg-opacity-30 px-6 py-2.5 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
@@ -97,15 +70,4 @@ const SearchInput = () => {
 };
 export default SearchInput;
 
-//STARTER CODE
-// const SearchInput = () => {
-// 	return (
-// 		<form className='flex items-center gap-2'>
-// 			<input type='text' placeholder='Search…' className='input input-bordered rounded-full' />
-// 			<button type='submit' className='btn btn-circle bg-sky-500 text-white'>
-// 				Icon
-// 			</button>
-// 		</form>
-// 	);
-// };
-// export default SearchInput;
+
